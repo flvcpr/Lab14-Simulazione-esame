@@ -48,7 +48,7 @@ class View(ft.UserControl):
             width=200,
             hint_text="Soglia (s)"
         )
-        self.btn_countedges = ft.ElevatedButton(text="Conta Archi", on_click=self._controller.handle_countedges)
+        self.btn_countedges = ft.ElevatedButton(text="Conta Archi", on_click=self._controller.handle_countedges,disabled=True)
         row2 = ft.Row([self.txt_name, self.btn_countedges],
                       alignment=ft.MainAxisAlignment.CENTER)
         self._page.controls.append(row2)
